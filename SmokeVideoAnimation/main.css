@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: #000;
+  height: 100vh;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #f00,
+    rgb(243, 220, 13),
+    rgb(86, 243, 13),
+    rgb(13, 235, 243),
+    rgb(36, 13, 243),
+    rgb(243, 13, 232)
+  );
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
