@@ -13,3 +13,29 @@
     background-color: darkorange;
     display: inline-block;
 }
+
+.parentflex{
+    margin-top: 2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    height: 50vh;
+    background-color: darkseagreen;
+}
+
+.flexbox{
+    background-color: forestgreen;
+    /* set width of each flex item and keep width of them intact */
+    flex: 0 1 300px;
+
+    /*flex: 1 1 300px; *//* strechable flexbox */
+    
+    margin: 2rem;
+    
+    /* display div text in center */
+    display: grid;
+    place-items: center;
+    
+}
