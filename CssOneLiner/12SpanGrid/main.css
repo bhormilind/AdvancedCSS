@@ -15,7 +15,6 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-gap
 }
 
 .span-12{
