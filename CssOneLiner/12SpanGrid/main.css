@@ -1,0 +1,35 @@
+.green {
+    background-color: greenyellow;
+}
+
+.coral{
+    background-color: coral;
+}
+.blue{
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow ;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap
+}
+
+.span-12{
+    grid-column: 1 /13;
+}
+
+.span-6 {
+    grid-column: 1 / 7;
+}
+
+.span-4 {
+    grid-column: 2/6;
+}
+
+.span-2 {
+    grid-column: 2/4;
+}
