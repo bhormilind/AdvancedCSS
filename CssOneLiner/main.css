@@ -39,3 +39,20 @@
     place-items: center;
     
 }
+
+.parentGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: minmax(20vh, 30vh) 1fr;
+    background-color: skyblue;
+    height: 50vh;
+
+}
+
+.col1 {
+    background-color: yellow;
+}
+
+.col2 {
+    background-color: thistle;
+}
