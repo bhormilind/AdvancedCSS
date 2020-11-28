@@ -1,0 +1,26 @@
+{
+  "name": "trilloproject",
+  "version": "1.0.0",
+  "description": "A HotelBooking Webstite to Demo Flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhormilind/AdvancedCSS.git"
+  },
+  "keywords": [
+    "Flex",
+    "Box"
+  ],
+  "author": "Milind Bhor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhormilind/AdvancedCSS/issues"
+  },
+  "homepage": "https://github.com/bhormilind/AdvancedCSS#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
