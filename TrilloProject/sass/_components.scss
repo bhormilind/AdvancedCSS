@@ -112,28 +112,39 @@
 
 .side-nav{
 
+    margin-top: 3rem;
+    list-style: none;
+    font-size: 1.4rem;
+    
 
     &__item{
-        list-style: none;
+        
     }
 
-    &__link{
+    &__link:visited,
+    &__link:link{
         text-decoration: none;
-        color: var(--color-grey-light-1);
+        padding: 1.5rem 3rem;
+        text-transform: uppercase;
+        display: inline-block;
+        color: var(--color-grey-light-2);
 
-        &:link,&:active{
-
-        }
+        display: flex;
+        align-items: center;
     }
 
     &__icon{
         width: 1.75rem;
         height: 1.75rem;
-        fill: var(--color-grey-light-1);
+
+        // Color of the currentElement or Parent Element
+        fill: currentColor;
+        margin-right: 2rem;
+        
     }
 
     &__link-name{
-
+       
     }
 }
 

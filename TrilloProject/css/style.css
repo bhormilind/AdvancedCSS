@@ -90,17 +90,23 @@ Grey dark 3: #999
     align-items: center;
     justify-content: center; }
 
-.side-nav__item {
-  list-style: none; }
-
-.side-nav__link {
-  text-decoration: none;
-  color: var(--color-grey-light-1); }
-
-.side-nav__icon {
-  width: 1.75rem;
-  height: 1.75rem;
-  fill: var(--color-grey-light-1); }
+.side-nav {
+  margin-top: 3rem;
+  list-style: none;
+  font-size: 1.4rem; }
+  .side-nav__link:visited, .side-nav__link:link {
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--color-grey-light-2);
+    display: flex;
+    align-items: center; }
+  .side-nav__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: currentColor;
+    margin-right: 2rem; }
 
 .legal {
   font-size: 1.2rem;
