@@ -109,3 +109,37 @@
 
     }
 }
+
+.side-nav{
+
+
+    &__item{
+        list-style: none;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: var(--color-grey-light-1);
+
+        &:link,&:active{
+
+        }
+    }
+
+    &__icon{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-grey-light-1);
+    }
+
+    &__link-name{
+
+    }
+}
+
+.legal{
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem;
+}

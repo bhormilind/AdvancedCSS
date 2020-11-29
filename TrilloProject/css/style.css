@@ -90,6 +90,24 @@ Grey dark 3: #999
     align-items: center;
     justify-content: center; }
 
+.side-nav__item {
+  list-style: none; }
+
+.side-nav__link {
+  text-decoration: none;
+  color: var(--color-grey-light-1); }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-grey-light-1); }
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -110,8 +128,11 @@ Grey dark 3: #999
   display: flex; }
 
 .sidebar {
-  background-color: va(--color-grey-light-2);
-  flex: 0 0 18%; }
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   background-color: orangered;
