@@ -212,30 +212,100 @@
 // Overview
 
 .overview {
+    // height: 7rem;
+    background-color: var(--color-grey-light-2);
+
+    display: flex;
+    align-items: center;
 
     &__heading{
-
+        margin: 0 2rem;
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 2rem;
     }
 
     &__stars{
-
+        margin-right: auto;
+        display: flex;
     }
 
-    &__icon-star,&__location{
-
+    &__icon-star,
+    &__icon-location{
+        width: 2rem;
+        height: 2rem;
+        color: var(--color-primary);
+        fill: currentColor;
     }
 
-    &__location {
-
+    &__location{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        
     }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+
     &__rating{
+        margin-left:2rem;
+        background-color: var(--color-primary);
+        align-self: stretch;
+        padding: 1.5rem 1rem;
 
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__rating-average{
-
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 400;   
     }
-    &__rating-votes{
+}
 
+.btn-inline{
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    background-color: transparent;
+    padding-bottom: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        color: var(--color-grey-dark-1);
+    }
+
+    &:focus{
+        outline: none;
+        animation: btnGlow 1s infinite;
+    }
+}
+
+
+@keyframes btnGlow{
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.2);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
     }
 }
