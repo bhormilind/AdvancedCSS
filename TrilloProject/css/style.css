@@ -38,7 +38,7 @@ Grey dark 3: #999
       outline: none;
       width: 100%; }
     .search__input::-webkit-input-placeholder {
-      color: var(--color-grey-light-4); }
+      color: var(--color-primary); }
   .search__input:focus + .search__button {
     background-color: var(--color-grey-light-3); }
   .search__button {
