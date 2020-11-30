@@ -201,6 +201,8 @@
 
     &__photo{
         width: 100%;
+        // Image must be alway either block or inline block elemenet 
+        // to avoid a unwanted black space to the bottom
         display: block;
     }
 }
