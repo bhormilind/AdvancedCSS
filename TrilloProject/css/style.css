@@ -137,6 +137,12 @@ Grey dark 3: #999
   text-align: center;
   padding: 2.5rem; }
 
+.gallary {
+  display: flex; }
+  .gallary__photo {
+    width: 100%;
+    display: block; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
