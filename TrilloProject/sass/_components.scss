@@ -206,3 +206,36 @@
         display: block;
     }
 }
+
+
+// //////////////////////@at-root
+// Overview
+
+.overview {
+
+    &__heading{
+
+    }
+
+    &__stars{
+
+    }
+
+    &__icon-star,&__location{
+
+    }
+
+    &__location {
+
+    }
+    &__rating{
+
+    }
+
+    &__rating-average{
+
+    }
+    &__rating-votes{
+
+    }
+}
