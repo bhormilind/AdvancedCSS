@@ -110,9 +110,11 @@ Grey dark 3: #999
     transform-origin: bottom;
     transform: scaleY(0);
     transition: transform 0.2s, width 0.2s cubic-bezier(1, 0.01, 0, 1) 0.2s; }
-  .side-nav__item:hover::before {
+  .side-nav__item:hover::before, .side-nav__item-active::before {
     transform: scaleY(1);
     width: 100%; }
+  .side-nav__item:active::before {
+    background-color: var(--color-primary-light); }
   .side-nav__link:visited, .side-nav__link:link {
     text-decoration: none;
     padding: 1.5rem 3rem;
