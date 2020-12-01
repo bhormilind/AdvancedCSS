@@ -295,8 +295,7 @@ Grey dark 3: #999
   padding: 3rem; }
 
 .user-reviews {
-  flex: 1;
-  background-color: yellowgreen; }
+  flex: 1; }
 
 :root {
   --color-primary: #eb2f64;

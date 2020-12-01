@@ -1,174 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <img src="./img/logo.png" alt="Logo" class="logo">
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="./img/sprites.svg#icon-magnifying-glass"></use>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search hotels">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="./img/sprites.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href='img/sprites.svg#icon-bookmark'></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href='img/sprites.svg#icon-bookmarks'></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="./img/user.jpg" alt="" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Jonas</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item-active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprites.svg#icon-home"></use>
+                            </svg>
+                            <span class="side-nav__link-name">Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprites.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span class="side-nav__link-name">Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprites.svg#icon-key"></use>
+                            </svg>
+                            <span class="side-nav__link-name">Car Rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprites.svg#icon-map"></use>
+                            </svg>
+                            <span class="side-nav__link-name">Tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &COPY; 2020 By Milind Bhor. All rights are reserved.
+                </div>
+            </nav>
+
+            <main class="hotel-view">
+                <div class="gallary">
+                    <figure class="gallary__item">
+                        <img src="./img/hotel-1.jpg" alt="Hotel Photo" class="gallary__photo">
+                    </figure>
+                    <figure class="gallary__item">
+                        <img src="./img/hotel-2.jpg" alt="Hotel Photo" class="gallary__photo">
+                    </figure>
+                    <figure class="gallary__item">
+                        <img src="./img/hotel-3.jpg" alt="Hotel Photo" class="gallary__photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Hotel La Vagas
+                    </h1>
+                    <div class="overview__stars">
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprites.svg#icon-star"></use>
                         </svg>
-                    </button>
-                </form>
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href='img/sprites.svg#icon-bookmark'></use>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprites.svg#icon-star"></use>
                         </svg>
-                        <span class="user-nav__notification">7</span>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href='img/sprites.svg#icon-bookmarks'></use>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprites.svg#icon-star"></use>
                         </svg>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-                    <div class="user-nav__user">
-                       <img src="./img/user.jpg" alt="" class="user-nav__user-photo">
-                       <span class="user-nav__user-name">Jonas</span>
-                    </div>
-                </nav>
-            </header>
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item-active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="./img/sprites.svg#icon-home"></use>
-                                </svg>
-                                <span class="side-nav__link-name">Hotel</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="./img/sprites.svg#icon-aircraft-take-off"></use>
-                                </svg>
-                                <span class="side-nav__link-name">Flight</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="./img/sprites.svg#icon-key"></use>
-                                </svg>
-                                <span class="side-nav__link-name">Car Rental</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="./img/sprites.svg#icon-map"></use>
-                                </svg>
-                                <span class="side-nav__link-name">Tours</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="legal">
-                        &COPY; 2020 By Milind Bhor. All rights are reserved.
-                    </div>
-                </nav>
-
-                <main class="hotel-view">
-                    <div class="gallary">
-                        <figure class="gallary__item">
-                            <img src="./img/hotel-1.jpg" alt="Hotel Photo" class="gallary__photo">
-                        </figure>
-                        <figure class="gallary__item">
-                            <img src="./img/hotel-2.jpg" alt="Hotel Photo" class="gallary__photo">
-                        </figure>
-                        <figure class="gallary__item">
-                            <img src="./img/hotel-3.jpg" alt="Hotel Photo" class="gallary__photo">
-                        </figure> 
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprites.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprites.svg#icon-star"></use>
+                        </svg>
                     </div>
 
-                    <div class="overview">
-                        <h1 class="overview__heading">
-                            Hotel La Vagas
-                        </h1>
-                        <div class="overview__stars">
-                            <svg class="overview__icon-star">
-                                <use xlink:href="./img/sprites.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="./img/sprites.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="./img/sprites.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="./img/sprites.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="./img/sprites.svg#icon-star"></use>
-                            </svg>
-                        </div>
-
-                        <div class="overview__location">
-                            <svg class="overview__icon-location">
-                                <use xlink:href="./img/sprites.svg#icon-location-pin"></use>
-                            </svg>
-                            <button class="btn-inline">Las Vegas</button>
-                        </div>
-
-                        <div class="overview__rating">
-                            <div class="overview__rating-average">8.6</div>
-                            <div class="overview__rating-votes">498 votes</div>
-                        </div>
-
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="./img/sprites.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">Las Vegas</button>
                     </div>
 
-                    <div class="details">
-                        <div class="description">
-                            <p class="paragraph">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquid pariatur, alias sapiente voluptatem quasi qui aspernatur officia omnis aperiam praesentium neque cum, beatae ea facilis ducimus ratione veniam facere deleniti. Nihil nemo deserunt aspernatur excepturi assumenda et totam quod temporibus beatae pariatur, ducimus voluptas. Minima illum consequuntur totam autem.
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.6</div>
+                        <div class="overview__rating-votes">498 votes</div>
+                    </div>
+
+                </div>
+
+                <div class="details">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquid pariatur, alias
+                            sapiente voluptatem quasi qui aspernatur officia omnis aperiam praesentium neque cum, beatae
+                            ea facilis ducimus ratione veniam facere deleniti. Nihil nemo deserunt aspernatur excepturi
+                            assumenda et totam quod temporibus beatae pariatur, ducimus voluptas. Minima illum
+                            consequuntur totam autem.
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eum cumque quod nobis culpa
+                            quis reprehenderit repellendus odit beatae nihil vel esse doloribus provident dicta aut
+                            mollitia praesentium nisi quia voluptate suscipit accusantium quibusdam a eos maiores.
+                            Repudiandae vitae quos perferendis culpa, debitis quis incidunt nobis ad tempora eius velit
+                            illum harum veniam ab ex magni voluptatibus nulla quo eum!
+
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ullam.
                             </p>
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eum cumque quod nobis culpa quis reprehenderit repellendus odit beatae nihil vel esse doloribus provident dicta aut mollitia praesentium nisi quia voluptate suscipit accusantium quibusdam a eos maiores. Repudiandae vitae quos perferendis culpa, debitis quis incidunt nobis ad tempora eius velit illum harum veniam ab ex magni voluptatibus nulla quo eum!
-
-                            </p>
-                            <ul class="list">
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                            <div class="recommend">
-                                <p class="recommend__count">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ullam.
-                                </p>
-                                <div class="recommend__friends">
-                                    <img src="./img/user-1.jpg" alt="Friends Images" class="recommend__photo">
-                                    <img src="./img/user-2.jpg" alt="Friends Images" class="recommend__photo">
-                                    <img src="./img/user-3.jpg" alt="Friends Images" class="recommend__photo">
-                                    <img src="./img/user-4.jpg" alt="Friends Images" class="recommend__photo">
-                                </div>
+                            <div class="recommend__friends">
+                                <img src="./img/user-1.jpg" alt="Friends Images" class="recommend__photo">
+                                <img src="./img/user-2.jpg" alt="Friends Images" class="recommend__photo">
+                                <img src="./img/user-3.jpg" alt="Friends Images" class="recommend__photo">
+                                <img src="./img/user-4.jpg" alt="Friends Images" class="recommend__photo">
                             </div>
                         </div>
-                        <div class="user-reviews">
-                            User Review
-                        </div>
                     </div>
-                </main>
-            </div>
+                    <figure class="user-reviews">
+                        <figure class="review">
+                            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita omnis non
+                                molestias possimus dignissimos dolores quos velit doloremque quidem.</blockquote>
+
+                            <figurecaption class="review__user">
+                                <img src="./img/user-6.jpg" alt="" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Lorem, ipsum.</p>
+                                    <p class="review__user-date">Feb 22, 2020</p>
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figurecaption>
+                        </figure>
+                    </figure>
+                </div>
+            </main>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
