@@ -194,6 +194,11 @@ Grey dark 3: #999
   transition: all 0.2s; }
   .btn-inline:hover {
     color: var(--color-grey-dark-1); }
+    .btn-inline:hover span {
+      margin-left: 8px; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: margin-left .2s; }
   .btn-inline:focus {
     outline: none;
     animation: btnGlow 1s infinite; }
@@ -341,7 +346,10 @@ Grey dark 3: #999
   padding: 3rem; }
 
 .user-reviews {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 :root {
   --color-primary: #eb2f64;

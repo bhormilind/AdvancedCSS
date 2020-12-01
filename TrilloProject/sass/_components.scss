@@ -270,6 +270,15 @@
 
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span{
+        margin-left: 8px;
+    }
+  }
+
+  & span {
+      margin-left: 3px;
+      transition: margin-left .2s;
   }
 
   &:focus {
