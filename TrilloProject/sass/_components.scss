@@ -312,9 +312,6 @@
 // ////////////////////////////
 // Hotel - Details Section
 
-.description{
-
-}
 
 .paragraph:not(:last-child){
     margin-bottom: 2rem;
@@ -358,7 +355,6 @@
 }
 
 .recommend{
-
     font-size: 1.3rem;
     color: var(--color-grey-light-4);
     display: flex;
@@ -366,10 +362,6 @@
 
     &__count {
         flex: 0 0 50%;
-    }
-
-    &__friends{
-
     }
 
     &__photo{
@@ -382,7 +374,5 @@
         }
         box-sizing: content-box;
         border: 2px solid var(--color-grey-light-1);
-
-        // flex: 0 0 40%;
     }
 }
