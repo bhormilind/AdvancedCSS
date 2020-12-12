@@ -1,0 +1,32 @@
+a,a:visited,
+a:focus{
+    text-decoration: none;
+    color: red;
+}
+
+a[milind-tool-tip] {
+    position: relative;
+}
+
+a[milind-tool-tip]::before {
+    content: attr(milind-tool-tip);
+    position: absolute;
+    display: block;
+    background-color: rgba(60,60,60,.7);
+    border-radius: 15px;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all ease-out 0.3s;
+    
+}
+
+a[milind-tool-tip]:hover::before{
+    transform: scale(1);
+    bottom: 100%;
+}
+
